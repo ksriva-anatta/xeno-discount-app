@@ -40,6 +40,7 @@ export default defineConfig({
     port: Number(process.env.PORT || 3000),
     hmr: hmrConfig,
   },
+  ssr: { external: true },
   plugins: [
     remix({
       ignoredRouteFiles: ["**/.*"],
