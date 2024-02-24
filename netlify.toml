@@ -1,6 +1,9 @@
 [build]
-command = "npm run build && npm run docker-start"
+command = "npm run build"
 publish = "build/client"
+
+[deploy]
+command = npm run docker-start
 
 [dev]
 command = "npm run dev"
